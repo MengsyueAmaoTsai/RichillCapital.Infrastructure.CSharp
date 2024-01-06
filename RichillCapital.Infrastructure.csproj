@@ -1,5 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="./Solution.Build.props" />
+  
+  <PropertyGroup>
+    <PackageId>RichillCapital.Infrastructure</PackageId>
+    <Version>1.5.2</Version>
+  </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="coverage\**" />

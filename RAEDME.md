@@ -1,9 +1,9 @@
-# RichillCapital.Core
+# RichillCapital.Infrastructure
 
 ## Run Tests
 
 ```powershell
-dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=../../coverage/lcov.info -- MSTest.Parallelize.Workers=5
+dotnet test --no-build /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=../../coverage/lcov.info -- MSTest.Parallelize.Workers=5
 ```
 
 ## Packaging
@@ -15,5 +15,5 @@ dotnet pack -o ./dist -c Release
 ## Push to NuGet
 
 ```powershell
-dotnet nuget push .\dist\RichillCapital.Core.1.0.0.nupkg -k <api-key> -s https://api.nuget.org/v3/index.json
+dotnet nuget push .\dist\RichillCapital.Infrastructure.1.0.0.nupkg -k <api-key> -s https://api.nuget.org/v3/index.json
 ```
