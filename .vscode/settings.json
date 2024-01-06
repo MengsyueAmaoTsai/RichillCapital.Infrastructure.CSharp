@@ -1,5 +1,5 @@
 {
-  "dotnet.defaultSolution": "RichillCapital.Core.sln",
+  "dotnet.defaultSolution": "RichillCapital.Infrastructure.sln",
   "dotnet.server.useOmnisharp": true,
   "[csharp]": {
     "editor.formatOnSave": true,
