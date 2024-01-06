@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="./Solution.Build.props" />
+
+  <ItemGroup>
+    <Compile Remove="coverage\**" />
+    <Compile Remove="dist\**" />
+    <Compile Remove="Tests\**" />
+    <EmbeddedResource Remove="coverage\**" />
+    <EmbeddedResource Remove="dist\**" />
+    <EmbeddedResource Remove="Tests\**" />
+    <None Remove="coverage\**" />
+    <None Remove="dist\**" />
+    <None Remove="Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".gitignore" />
+    <None Remove="LICENSE" />
+    <None Remove="RAEDME.md" />
+    <None Remove="Solution.Build.props" />
+    <None Remove="Solution.Build.Tests.props" />
+    <None Remove="Solution.ruleset" />
+  </ItemGroup>
+
+  <Import Project="./Solution.Packages.props" />
+</Project>
