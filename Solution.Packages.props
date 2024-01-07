@@ -4,7 +4,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageReference Include="RichillCapital.Core" Version="1.5.2" />
+    <PackageReference Include="RichillCapital.Core" Version="1.5.3" />
   </ItemGroup>
   
   <ItemGroup>
