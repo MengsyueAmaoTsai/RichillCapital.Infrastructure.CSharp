@@ -3,7 +3,7 @@
   
   <PropertyGroup>
     <PackageId>RichillCapital.Infrastructure</PackageId>
-    <Version>1.5.2</Version>
+    <Version>1.5.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,9 +21,10 @@
   <ItemGroup>
     <None Remove=".gitignore" />
     <None Remove="LICENSE" />
-    <None Remove="RAEDME.md" />
+    <None Remove="README.md" />
     <None Remove="Solution.Build.props" />
     <None Remove="Solution.Build.Tests.props" />
+    <None Remove="Solution.Packages.props" />
     <None Remove="Solution.ruleset" />
   </ItemGroup>
 
