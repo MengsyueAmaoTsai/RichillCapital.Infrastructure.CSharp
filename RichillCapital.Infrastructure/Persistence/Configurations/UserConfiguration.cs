@@ -19,7 +19,7 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
             .Property(user => user.Id)
             .HasColumnName("id")
             .HasMaxLength(UserId.MaxLength)
-            .HasConversion(id => id.Value, id => new UserId(id))
+            .HasConversion(id => id.Value, id => UserId.From(id))
             .IsRequired();
 
         // Email
@@ -27,7 +27,7 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
             .Property(user => user.Email)
             .HasColumnName("email")
             .HasMaxLength(Email.MaxLength)
-            .HasConversion(email => email.Value, email => new Email(email))
+            .HasConversion(email => email.Value, email => Email.From(email))
             .IsRequired();
 
         // Name
