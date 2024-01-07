@@ -20,7 +20,7 @@ internal sealed class AccountConfiguration : IEntityTypeConfiguration<Account>
             .Property(account => account.Id)
             .HasColumnName("id")
             .HasMaxLength(AccountId.MaxLength)
-            .HasConversion(id => id.Value, id => new AccountId(id))
+            .HasConversion(id => id.Value, id => AccountId.From(id))
             .IsRequired();
 
         // Name
